@@ -1,8 +1,9 @@
 import React from "react";
+import styles from './Cadastro.module.css'
 
 const Cadastro = () => {
   return (
-    <div>
+    <div className={styles.cadastro}>
         <h2>Cadastre-se</h2>
       <form>
         <label>
@@ -29,7 +30,7 @@ const Cadastro = () => {
             placeholder="Confirme a Senha"
           />
         </label>
-        <button>Cadastrar</button>
+        <button className="btn">Cadastrar</button>
       </form>
     </div>
   );

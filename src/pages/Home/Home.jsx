@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import styles from './Home.module.css'
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.home}>
       <h2>Login</h2>
       <form>
         <label>
@@ -18,8 +19,10 @@ const Home = () => {
             placeholder="Digite sua senha"
           />
         </label>
-        <button>Entrar</button>
-        <Link to='/cadastro'>Cadastre-se</Link>
+        <button className="btn">Entrar</button>
+        <Link to="/cadastro" className="btn">
+          Cadastre-se
+        </Link>
       </form>
     </div>
   );
