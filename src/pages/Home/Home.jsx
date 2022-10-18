@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
           />
         </label>
         <button>Entrar</button>
+        <Link to='/cadastro'>Cadastre-se</Link>
       </form>
     </div>
   );
