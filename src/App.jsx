@@ -8,6 +8,7 @@ function App() {
 
   return (
     <main className='container'>
+
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home /> }></Route>
